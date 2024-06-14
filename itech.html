@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITECH</title>
+    <link rel="stylesheet" href="ITECH.CSS">
+</head>
+<body>
+    <form>
+   <marquee id="itech"><b>ITECH COMPUTER EDUCATION<br>SPOKEN ENGLISH & HINDI</b><br><br><b>An ISO 9001:2015 certified</b></marquee>
+       
+       
+
+
+
+   
+    <div id="id01" class="modal">
+
+        <form class="/modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+        
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="close"  >&times;</span>
+    </div>
+
+    
+            <img src="profile.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>User Name</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1;">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot<a href="#">Password?  </a></span>
+        
+        </div>
+    </from>
+    <button onclick="document.getElementById('id01').style.display='block'" id="log">
+        Login
+    </button>
+    
+
+    <script>
+        var moadal=document.getElementById('id01');
+
+        window.onclick=function(event)
+        {
+            if(event.target==moadal){
+                modal.style.display="none";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
